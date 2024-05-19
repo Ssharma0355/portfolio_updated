@@ -1,6 +1,14 @@
 import Container from "@/components/Container";
 import { useEffect, useRef, Suspense, useState } from "react";
 import styles from "@/styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+
 import { Button } from "@/components/ui/button";
 import {
   ChevronRight,
@@ -28,40 +36,40 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Years of experience", value: "1+" },
+  { label: "Technologies mastered", value: "7+" },
+  { label: "Companies worked with", value: "5+" },
 ];
 
 const projects = [
   {
     title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    description: "Social Media Manager",
+    image: "/assets/Board.webm",
+    href: "https://openinapp-chi.vercel.app/auth/signIn",
   },
   {
     title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
+    description: "Online Health solution for Doctors, Nurses & Medications",
+    image: "/assets/2.webm",
+    href: "https://myclnq.co/",
   },
   {
     title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
+    description: "Weather Reporting App",
+    image: "/assets/3.webm",
+    href: "https://weather-react-app-amber.vercel.app/",
   },
   {
     title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    description: "Mental Health and Wellness company",
+    image: "/assets/4.webm",
+    href: "https://theoneliner.in/",
   },
   {
     title: "This website",
     description: "My personal website",
-    image: "/assets/portfolio.webm",
+    image: "/assets/5.webm",
     href: "https://github.com/wendoj/portfolio",
   },
 ];
@@ -190,9 +198,14 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Next.js</span>
+              <span className={styles.pill}>Tailwindcss</span>
+              <span className={styles.pill}>Typescript</span>
+              <span className={styles.pill}>JavaScript</span>
+              <span className={styles.pill}>React.js</span>
+              <span className={styles.pill}>Node.js</span>
+              <span className={styles.pill}>Express.js</span>
+              <span className={styles.pill}>MongoDB</span>
             </div>
             <div>
               <h1
@@ -206,7 +219,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Sachin.
                 </span>
               </h1>
               <p
@@ -275,9 +288,9 @@ export default function Home() {
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
+                React.js, JavaScript, TypeScript, Tailwind, and Next.js
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
+              since 2023. My experience spans from startups to mid-sized
               companies, where I&apos;ve been instrumental in the entire product
               design process; from ideation and wireframing, through
               prototyping, to the delivery of the final product, all while
@@ -446,7 +459,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:ssharma0355@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>
